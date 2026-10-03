@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bartland</title>
+  <meta name="description" content="Webové stránky Bartland se připravují.">
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --fg: #1f1d1a;
+      --muted: #6b655c;
+      --accent: #8a5a2b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #171512;
+        --fg: #f1ece4;
+        --muted: #a39b8f;
+        --accent: #d9a56b;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Georgia, "Times New Roman", serif;
+      display: grid;
+      place-items: center;
+      padding: 16px;
+    }
+    main { max-width: 36rem; text-align: center; }
+    .mark {
+      width: 56px; height: 56px; margin: 0 auto 1.5rem;
+      border: 2px solid var(--accent); border-radius: 50%;
+      display: grid; place-items: center;
+      color: var(--accent); font-size: 1.5rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      margin: 0 0 0.75rem;
+    }
+    p { color: var(--muted); font-size: 1.1rem; line-height: 1.6; margin: 0 0 0.5rem; }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">✦</div>
+    <h1>Bartland</h1>
+    <p>Naše webové stránky se právě připravují.</p>
+    <p>Děkujeme za trpělivost, brzy se tu uvidíme.</p>
+  </main>
+</body>
+</html>
